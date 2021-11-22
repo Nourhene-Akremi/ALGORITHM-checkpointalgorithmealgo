@@ -1,0 +1,16 @@
+ALGORITHM auxiliaire
+VAR
+    x,y,z,aux:INTEGER;
+BEGIN
+write(' type number ',x);
+read(x);
+write(' type number ',y);
+read(y);
+write(' type number ',z);
+read(z);
+    aux:=x;
+    x:=y;
+    y:=z;
+    z:=aux;
+  write(x,y,z);
+END

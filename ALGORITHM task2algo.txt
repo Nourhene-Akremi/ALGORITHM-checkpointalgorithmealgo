@@ -1,0 +1,30 @@
+ALGORITHM task2
+VAR
+nb_km,nb_days:INTEGER;
+cost-km,cost-days:FLOAT;
+p-d:FLOAT:100;
+inst:FLOAT:0,3;
+vat:FLOAT:0,19;
+r1:FLOAT:0,7;
+r2:FLOAT:o,4;
+r3:FLOAT:o,2;
+
+BEGIN
+write('type kilometre');
+read(nb-km);
+write('type number of days');
+read(nb-days);
+IF (nb-km<=100) THEN
+cost-km=nb-km*r1 ;
+else if(nb-km<=1000) THEN
+cost-km=100*r1+(nb-km-100)*r2;
+else cost-km=100*r1+900*r2+(nb-km-100)*r3;
+END_IF
+cost-km=cost-km+nb-dqys*ins;
+cost-day:=nb-days*(p-d+ins);
+costbyday:=costbyday+costbyday*vat;
+costbyday=:costbyday*(1+vat);
+if(costbyday<cost-km)THEN write('its better to use the result by day');
+else write('its better to use the result by rm')
+
+END

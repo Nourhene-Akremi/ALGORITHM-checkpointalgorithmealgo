@@ -1,0 +1,20 @@
+ALGORITHM checkpointalgorithme
+VAR
+nb_car:INTEGER:=0;
+nb_words:INTEGER:=1;
+nb_voy:INTEGER:=0;
+c:char:='';BEGIN
+BEGIN
+while(c<>.);
+read(c);
+nb_car=nb_car+1;
+IF (c='') THEN
+nb_words:=nb_words+1;
+IF (c='a' or c='o' or c='u' or c='y' or c='e') THEN
+nb_voy=nb_voy+1;
+END_IF
+END WHILE
+write('the number of  voyals is',nb_voy);
+write('the number of  caracters is',nb_car);
+write('the number of  words is',nb_words);
+END
